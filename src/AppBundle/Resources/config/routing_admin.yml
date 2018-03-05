@@ -1,0 +1,16 @@
+
+add_inventory:
+    path:     /admin/add-inventory
+    defaults: { _controller: AppBundle:Admin:addInventory }
+
+edit_inventory:
+    path:     /admin/edit-inventory/{id}
+    defaults: { _controller: AppBundle:Admin:editInventory }
+
+list_inventory:
+    path:     /admin/list-inventory
+    defaults: { _controller: AppBundle:Admin:listInventory }
+
+delete_inventory:
+    path:     /admin/delete-inventory/{id}
+    defaults: { _controller: AppBundle:Admin:deleteInventory }
