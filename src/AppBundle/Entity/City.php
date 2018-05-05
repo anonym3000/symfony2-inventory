@@ -29,17 +29,17 @@ class City
     private $name;
 
     /**
-     * @var Region 
-     * 
+     * @var Region
+     *
      * @ORM\ManyToOne(targetEntity="Region")
      */
-    private $region; 
+    private $region;
 
 
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -62,7 +62,7 @@ class City
     /**
      * Get name
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {
@@ -85,7 +85,7 @@ class City
     /**
      * Get region
      *
-     * @return \stdClass 
+     * @return \stdClass
      */
     public function getRegion()
     {

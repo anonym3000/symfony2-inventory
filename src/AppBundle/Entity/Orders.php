@@ -4,7 +4,6 @@ namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
-
 /**
  * Orders
  *
@@ -24,14 +23,14 @@ class Orders
 
     /**
      * @var ProductLink
-     * 
+     *
      * @ORM\ManyToOne(targetEntity="ProductLink", inversedBy="orders")
      */
     private $productLink;
 
     /**
      * @var Customer
-     * 
+     *
      * @ORM\ManyToOne(targetEntity="Customer", inversedBy="orders")
      */
     private $customer;
@@ -62,12 +61,12 @@ class Orders
      *
      * @ORM\Column(name="date", type="datetime")
      */
-    private $date; 
+    private $date;
     
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -90,7 +89,7 @@ class Orders
     /**
      * Get productLink
      *
-     * @return ProductLink 
+     * @return ProductLink
      */
     public function getProductLink()
     {
@@ -113,7 +112,7 @@ class Orders
     /**
      * Get customer
      *
-     * @return \stdClass 
+     * @return \stdClass
      */
     public function getCustomer()
     {
@@ -136,7 +135,7 @@ class Orders
     /**
      * Get quantity
      *
-     * @return integer 
+     * @return integer
      */
     public function getQuantity()
     {
@@ -159,7 +158,7 @@ class Orders
     /**
      * Get price
      *
-     * @return float 
+     * @return float
      */
     public function getPrice()
     {
@@ -182,7 +181,7 @@ class Orders
     /**
      * Get date
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getDate()
     {

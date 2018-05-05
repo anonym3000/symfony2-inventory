@@ -44,7 +44,7 @@ class Product
     
     /**
      * @var ArrayCollection
-     * 
+     *
      * @ORM\OneToMany(targetEntity="ProductLink", mappedBy="product")
      */
     private $productLinks;
@@ -53,7 +53,7 @@ class Product
      * @var ArrayCollection
      * @ORM\OneToMany(targetEntity="SupplierProduct", mappedBy="product")
      */
-    private $supplierProducts; 
+    private $supplierProducts;
 
     /**
      * @var integer
@@ -99,7 +99,7 @@ class Product
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -122,7 +122,7 @@ class Product
     /**
      * Get name
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {
@@ -145,7 +145,7 @@ class Product
     /**
      * Get category
      *
-     * @return \stdClass 
+     * @return \stdClass
      */
     public function getCategory()
     {
@@ -168,7 +168,7 @@ class Product
     /**
      * Get description
      *
-     * @return string 
+     * @return string
      */
     public function getDescription()
     {
@@ -191,7 +191,7 @@ class Product
     /**
      * Get stock
      *
-     * @return integer 
+     * @return integer
      */
     public function getStock()
     {
@@ -214,7 +214,7 @@ class Product
     /**
      * Get gift
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getGift()
     {
@@ -237,12 +237,12 @@ class Product
     /**
      * Get requested
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getRequested()
     {
         return $this->requested;
-    }    
+    }
     
     /**
      * Get product links
@@ -270,7 +270,7 @@ class Product
     /**
      * Get dateAdded
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getDateAdded()
     {
@@ -293,7 +293,7 @@ class Product
     /**
      * Get version
      *
-     * @return integer 
+     * @return integer
      */
     public function getVersion()
     {

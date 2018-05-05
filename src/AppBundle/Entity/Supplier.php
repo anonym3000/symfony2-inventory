@@ -26,7 +26,7 @@ class Supplier
      * @var ArrayCollection
      * @ORM\OneToMany(targetEntity="SupplierProduct", mappedBy="supplier")
      */
-    private $supplierProducts; 
+    private $supplierProducts;
 
     /**
      * @var string
@@ -64,7 +64,7 @@ class Supplier
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -87,7 +87,7 @@ class Supplier
     /**
      * Get name
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {
@@ -110,7 +110,7 @@ class Supplier
     /**
      * Get url
      *
-     * @return string 
+     * @return string
      */
     public function getUrl()
     {
@@ -133,7 +133,7 @@ class Supplier
     /**
      * Get fastShipping
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getFastShipping()
     {
@@ -156,7 +156,7 @@ class Supplier
     /**
      * Get description
      *
-     * @return string 
+     * @return string
      */
     public function getDescription()
     {

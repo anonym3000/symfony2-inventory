@@ -46,7 +46,7 @@ class ExchangeRate
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -69,7 +69,7 @@ class ExchangeRate
     /**
      * Get currency
      *
-     * @return Currency 
+     * @return Currency
      */
     public function getCurrency()
     {
@@ -92,7 +92,7 @@ class ExchangeRate
     /**
      * Get date
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getDate()
     {
@@ -115,7 +115,7 @@ class ExchangeRate
     /**
      * Get rate
      *
-     * @return float 
+     * @return float
      */
     public function getRate()
     {

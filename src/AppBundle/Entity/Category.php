@@ -2,8 +2,8 @@
 
 namespace AppBundle\Entity;
 
-use Doctrine\ORM\Mapping as ORM,
-    Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * Category
@@ -31,7 +31,7 @@ class Category
 
     /**
      * @var ArrayCollection
-     * 
+     *
      * @ORM\OneToMany(targetEntity="Product", mappedBy="category")
      */
     private $products;
@@ -44,7 +44,7 @@ class Category
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -67,7 +67,7 @@ class Category
     /**
      * Get name
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {

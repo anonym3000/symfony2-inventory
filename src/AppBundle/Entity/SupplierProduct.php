@@ -23,14 +23,14 @@ class SupplierProduct
 
     /**
      * @var Supplier
-     * 
+     *
      * @ORM\ManyToOne(targetEntity="Supplier", inversedBy="supplierProducts")
      */
     private $supplier;
 
     /**
      * @var Product
-     * 
+     *
      * @ORM\ManyToOne(targetEntity="Product", inversedBy="supplierProducts")
      */
     private $product;
@@ -44,7 +44,7 @@ class SupplierProduct
     
     /**
      * @var Currency
-     * 
+     *
      * @ORM\ManyToOne(targetEntity="Currency")
      */
     private $currency;
@@ -68,7 +68,7 @@ class SupplierProduct
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -91,7 +91,7 @@ class SupplierProduct
     /**
      * Get supplier
      *
-     * @return Supplier 
+     * @return Supplier
      */
     public function getSupplier()
     {
@@ -114,7 +114,7 @@ class SupplierProduct
     /**
      * Get product
      *
-     * @return integer 
+     * @return integer
      */
     public function getProduct()
     {
@@ -137,7 +137,7 @@ class SupplierProduct
     /**
      * Get url
      *
-     * @return string 
+     * @return string
      */
     public function getUrl()
     {
@@ -160,7 +160,7 @@ class SupplierProduct
     /**
      * Get price
      *
-     * @return float 
+     * @return float
      */
     public function getPrice()
     {
@@ -183,7 +183,7 @@ class SupplierProduct
     /**
      * Get version
      *
-     * @return string 
+     * @return string
      */
     public function getVersion()
     {

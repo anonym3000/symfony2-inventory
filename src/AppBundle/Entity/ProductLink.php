@@ -2,8 +2,8 @@
 
 namespace AppBundle\Entity;
 
-use Doctrine\ORM\Mapping as ORM,
-    Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * ProductLink
@@ -24,14 +24,14 @@ class ProductLink
 
     /**
      * @var Product
-     * 
+     *
      * @ORM\ManyToOne(targetEntity="Product", inversedBy="productLinks")
      */
     private $product;
 
     /**
      * @var Marketplace
-     * 
+     *
      * @ORM\ManyToOne(targetEntity="Marketplace", inversedBy="productLinks")
      */
     private $marketplace;
@@ -45,10 +45,10 @@ class ProductLink
     
     /**
      * @var ArrayCollection
-     *  
+     *
      * @ORM\OneToMany(targetEntity="Orders", mappedBy="productLink")
      */
-    private $orders; 
+    private $orders;
     
     /**
      * @var \DateTime
@@ -72,7 +72,7 @@ class ProductLink
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -95,7 +95,7 @@ class ProductLink
     /**
      * Get product
      *
-     * @return \stdClass 
+     * @return \stdClass
      */
     public function getProduct()
     {
@@ -118,7 +118,7 @@ class ProductLink
     /**
      * Get marketplace
      *
-     * @return \stdClass 
+     * @return \stdClass
      */
     public function getMarketplace()
     {
@@ -141,7 +141,7 @@ class ProductLink
     /**
      * Get url
      *
-     * @return string 
+     * @return string
      */
     public function getUrl()
     {
@@ -164,7 +164,7 @@ class ProductLink
     /**
      * Get dateAdded
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getDateAdded()
     {
@@ -187,7 +187,7 @@ class ProductLink
     /**
      * Get version
      *
-     * @return integer 
+     * @return integer
      */
     public function getVersion()
     {

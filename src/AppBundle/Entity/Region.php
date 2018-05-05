@@ -32,7 +32,7 @@ class Region
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -55,7 +55,7 @@ class Region
     /**
      * Get name
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {

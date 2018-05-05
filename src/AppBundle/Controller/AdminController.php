@@ -10,28 +10,27 @@ class AdminController extends Controller
     {
         return $this->render('AppBundle:Admin:addInventory.html.twig', array(
                 // ...
-            ));    
+            ));
     }
 
     public function editInventoryAction($id)
     {
         return $this->render('AppBundle:Admin:editInventory.html.twig', array(
                 // ...
-            ));    
+            ));
     }
 
     public function listInventoryAction()
     {
         return $this->render('AppBundle:Admin:listInventory.html.twig', array(
                 // ...
-            ));    
+            ));
     }
 
     public function deleteInventoryAction($id)
     {
         return $this->render('AppBundle:Admin:deleteInventory.html.twig', array(
                 // ...
-            ));    
+            ));
     }
-
 }

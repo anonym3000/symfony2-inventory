@@ -51,11 +51,11 @@ class Customer
     private $phone;
 
     /**
-     * @var City 
-     * 
+     * @var City
+     *
      * @ORM\ManyToOne(targetEntity="City")
      */
-    private $city; 
+    private $city;
 
     /**
      * @var string
@@ -86,7 +86,7 @@ class Customer
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -109,7 +109,7 @@ class Customer
     /**
      * Get firstName
      *
-     * @return string 
+     * @return string
      */
     public function getFirstName()
     {
@@ -132,7 +132,7 @@ class Customer
     /**
      * Get lastName
      *
-     * @return string 
+     * @return string
      */
     public function getLastName()
     {
@@ -155,7 +155,7 @@ class Customer
     /**
      * Get email
      *
-     * @return string 
+     * @return string
      */
     public function getEmail()
     {
@@ -178,7 +178,7 @@ class Customer
     /**
      * Get phone
      *
-     * @return string 
+     * @return string
      */
     public function getPhone()
     {
@@ -202,7 +202,7 @@ class Customer
     /**
      * Get city
      *
-     * @return City 
+     * @return City
      */
     public function getCity()
     {
@@ -225,7 +225,7 @@ class Customer
     /**
      * Get address
      *
-     * @return string 
+     * @return string
      */
     public function getAddress()
     {
@@ -248,7 +248,7 @@ class Customer
     /**
      * Get dateAdded
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getDateAdded()
     {

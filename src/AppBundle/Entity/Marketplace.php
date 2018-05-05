@@ -2,8 +2,8 @@
 
 namespace AppBundle\Entity;
 
-use Doctrine\ORM\Mapping as ORM,
-    Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * Marketplace
@@ -38,10 +38,10 @@ class Marketplace
     
     /**
      * @var ProductLink
-     * 
+     *
      * @ORM\OneToMany(targetEntity="ProductLink", mappedBy="marketplace")
      */
-    private $productLinks; 
+    private $productLinks;
     
     public function __construct()
     {
@@ -52,7 +52,7 @@ class Marketplace
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -75,7 +75,7 @@ class Marketplace
     /**
      * Get name
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {
@@ -98,7 +98,7 @@ class Marketplace
     /**
      * Get url
      *
-     * @return string 
+     * @return string
      */
     public function getUrl()
     {
